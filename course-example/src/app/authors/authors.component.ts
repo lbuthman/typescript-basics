@@ -23,4 +23,8 @@ export class AuthorsComponent implements OnInit {
     alert("I was clicked! " + event.isTrusted);
   }
 
+  onKeyUp() {
+    alert("Enter was pressed. Good job.");
+  }
+
 }
