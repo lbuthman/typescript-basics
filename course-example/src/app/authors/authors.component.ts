@@ -11,6 +11,7 @@ export class AuthorsComponent implements OnInit {
   authors;
   colSpan = 2;
   isPrimary = true;
+  email = 'placeholder@example.com';
 
   constructor(service: AuthorsService) { 
     this.authors = service.getAuthors();
@@ -23,8 +24,8 @@ export class AuthorsComponent implements OnInit {
     alert("I was clicked! " + event.isTrusted);
   }
 
-  onKeyUp(email) {
-    alert("You typed " + email);
+  onKeyUp() {
+    alert("You typed " + this.email);
   }
 
 }
