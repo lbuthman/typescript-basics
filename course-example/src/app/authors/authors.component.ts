@@ -10,6 +10,7 @@ export class AuthorsComponent implements OnInit {
 
   authors;
   colSpan = 2;
+  isPrimary = true;
 
   constructor(service: AuthorsService) { 
     this.authors = service.getAuthors();
