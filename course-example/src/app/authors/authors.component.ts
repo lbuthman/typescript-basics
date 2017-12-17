@@ -12,6 +12,13 @@ export class AuthorsComponent implements OnInit {
   colSpan = 2;
   isPrimary = true;
   email = 'placeholder@example.com';
+  stats = {
+    title: "My cool stats",
+    rating: 4.9753,
+    population: 40239,
+    money: 13.99,
+    birthDate: new Date(1981, 9, 27)
+  }
 
   constructor(service: AuthorsService) { 
     this.authors = service.getAuthors();

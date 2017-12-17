@@ -12,3 +12,10 @@
 </table>
 <button (click)="onClick($event)" class="btn" [class.btn-primary]="isPrimary">Save</button>
 <input [(ngModel)]="email" (keyup.enter)="onKeyUp()"/>
+<div>
+  <p>Stat Title: {{ stats.title | uppercase }}</p>
+  <p>My Rating: {{ stats.rating | number:'1.2-2' }} </p>
+  <p>My Population: {{ stats.population | number }}</p>
+  <p>My Money: {{ stats.money | currency }}</p>
+  <p>My Birthdate: {{ stats.birthDate | date:'shortDate' }}</p>
+</div>
