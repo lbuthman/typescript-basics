@@ -19,4 +19,8 @@ export class AuthorsComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick($event) {
+    alert("I was clicked! " + event.isTrusted);
+  }
+
 }

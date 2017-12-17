@@ -10,4 +10,4 @@
     <td [attr.colspan]="colSpan">Table Data</td>
   </tr>
 </table>
-<button class="btn" [class.btn-primary]="isPrimary">Save</button>
+<button (click)="onClick($event)" class="btn" [class.btn-primary]="isPrimary">Save</button>
