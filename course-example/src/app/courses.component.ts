@@ -10,10 +10,12 @@ import { Component } from '@angular/core';
                 {{ course }}
             </li>
         </ul>
+        <img [src]="imageUrl"/>
     `
 })
 export class CoursesComponent {
     title = "List of courses";
+    imageUrl = "http://via.placeholder.com/350x150";
     courses;
 
     constructor(service: CoursesService) {
